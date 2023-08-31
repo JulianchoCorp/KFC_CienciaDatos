@@ -35,7 +35,7 @@ Fiona==1.9.4.post1
 Flask==2.2.3
 fonttools==4.38.0
 fqdn==1.5.1
-geopandas==0.13.2
+geopandas==0.10.2
 idna==3.4
 ipykernel==6.25.1
 ipython==8.14.0
