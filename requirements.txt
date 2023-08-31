@@ -33,7 +33,7 @@ executing==1.2.0
 fastjsonschema==2.18.0
 Fiona==1.9.4.post1
 Flask==2.2.3
-fonttools==4.42.1
+fonttools==4.38.0
 fqdn==1.5.1
 geopandas==0.13.2
 idna==3.4
