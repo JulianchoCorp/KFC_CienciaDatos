@@ -60,7 +60,7 @@ nbclient==0.7.4
 nbconvert==7.6.0
 nbformat==5.8.0
 nest-asyncio==1.5.7
-numpy==1.25.2
+numpy==1.21.6
 overrides==7.4.0
 packaging==23.1
 pandas==2.1.0
