@@ -22,8 +22,17 @@ server = app.server
 cwd = os.getcwd()
 Final_dir = cwd + "/../Datos/Final/"
 graphs_dir = cwd + "/../graphs/"
-df = pd.read_csv(Final_dir + "final_Datos_presente.csv")
-df_futuro = pd.read_csv(Final_dir + "final_Datos_futuro.csv")
+
+try:
+    df = pd.read_csv(Final_dir + "final_Datos_presente.csv")
+except Exception as e:
+    print("Error al leer el archivo CSV:", e)
+
+try:
+    df_futuro = pd.read_csv(Final_dir + "final_Datos_futuro.csv")
+except Exception as e:
+    print("Error al leer el archivo CSV:", e)
+    
 logo_image = "assets/kfc.png"
 
 canales = sorted(df["canal"].unique())
