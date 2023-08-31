@@ -19,14 +19,11 @@ app = dash.Dash(external_stylesheets=["assets/html-components.css", dbc.themes.B
 
 ###------------DATOS
 server = app.server
-cwd = os.getcwd()
-Final_dir = cwd + "../Datos/Final/"
-graphs_dir = cwd + "../graphs/"
-
-
-df = pd.read_csv(Final_dir + "final_Datos_presente.csv")
-df_futuro = pd.read_csv(Final_dir + "final_Datos_futuro.csv")
-
+cwd = os.getcwd()  # Esto te dará el directorio actual, como '/home/usuario/mi_aplicacion'
+Final_dir = "../Datos/Final/"
+graphs_dir = "../graphs/"
+df = pd.read_csv(os.path.join(cwd, Final_dir, "final_Datos_presente.csv"))
+df_futuro = pd.read_csv(os.path.join(cwd, Final_dir, "final_Datos_futuro.csv"))
 logo_image = "assets/kfc.png"
 
 canales = sorted(df["canal"].unique())
