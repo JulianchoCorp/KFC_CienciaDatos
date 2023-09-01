@@ -15,7 +15,7 @@ from graphs import *
 ###------------MARGEN
 card_height_s = '18rem'
 card_height = '34rem'
-app = dash.Dash(external_stylesheets=["assets/html-components.css", dbc.themes.BOOTSTRAP])
+app = dash.Dash(external_stylesheets=["./assets/html-components.css", dbc.themes.BOOTSTRAP])
 
 ###------------DATOS
 server = app.server
