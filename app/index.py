@@ -15,11 +15,11 @@ from graphs import *
 ###------------MARGEN
 card_height_s = '18rem'
 card_height = '34rem'
-app = dash.Dash(external_stylesheets=["./assets/html-components.css", dbc.themes.BOOTSTRAP])
+cwd = os.getcwd()  # Esto te dará el directorio actual, como '/home/usuario/mi_aplicacion'
+app = dash.Dash(external_stylesheets=[os.path.join(cwd, 'assets/', "html-components.css"), dbc.themes.BOOTSTRAP])
 
 ###------------DATOS
 server = app.server
-cwd = os.getcwd()  # Esto te dará el directorio actual, como '/home/usuario/mi_aplicacion'
 Final_dir = "../Datos/Final/"
 graphs_dir = "../graphs/"
 df = pd.read_csv(os.path.join(cwd, Final_dir, "final_Datos_presente.csv"))
