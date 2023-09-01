@@ -491,7 +491,7 @@ def update_table_data(selected_restaurants, selected_canales, start_date, end_da
     return total_ventas_data.to_dict('records')
 
 if __name__ == "__main__":
-    app.run_server(port=8881, debug=False)
+    app.run_server(debug=False)
 
 
 
