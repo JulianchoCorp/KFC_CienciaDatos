@@ -1003,7 +1003,3 @@ def update_transacciones_por_canal_y_restaurante_fut(selected_restaurants, selec
     # Aquí puedes aplicar las actualizaciones de diseño específicas para este gráfico
     
     return fig
-
-
-if __name__ == "__main__":
-    app.run_server(port=8881, debug=True)
